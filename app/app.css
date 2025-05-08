@@ -5,11 +5,20 @@
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-html,
-body {
-  @apply bg-white dark:bg-gray-950;
+:root {
+  --color-primary: #3674B5;
+  --color-secondary: #578FCA;
+  --color-accent: #A1E3F9;
+  --color-light: #D1F8EF;
+}
 
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
+/* Optional: Add some global styles */
+body {
+  font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
+  color: #333;
+}
+
+/* Ensure the app takes full height */
+#root {
+  min-height: 100vh;
 }
